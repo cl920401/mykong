@@ -1,0 +1,11 @@
+FROM pantsel/konga:0.14.7
+
+EXPOSE 1337
+
+ENV DB_ADAPTER=postgres
+ENV DB_HOST=minibxm-konga.cswpntxnjjxy.rds.cn-northwest-1.amazonaws.com.cn
+ENV DB_USER=kong_test_pro
+ENV DB_PASSWORD=9prjsszpjdq9ulzzlttmcxz1g7hqx9
+ENV DB_DATABASE=konga_test_db
+ENV KONGA_HOOK_TIMEOUT=120000
+ENV NODE_ENV=development
